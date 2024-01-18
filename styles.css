@@ -1,0 +1,181 @@
+:root {
+    --primary: #009DD7;
+    --secondary: #C9CD2C;
+    --tertiary: #005D6C;
+    --primary-light: #e3ebec;
+    --primary-dark: #067BA6;
+    --color-light: #fff;
+    --bg-list: #f8f8f8;
+    --bg-grey: #f5f5f3;
+    --border-light: #ddd;
+    --border: 1px solid var(--border-light);
+    --border-radius: 5px;
+  }
+  
+  .conv-customer-header {
+      background-color: var(--bg-grey);
+  }
+  
+  .cf-row-field {
+    color: var(--tertiary);
+  }
+  
+  .conv-sidebar-block .panel-heading {
+    background-color: var(--primary-light) !important;
+  }
+  
+  .sidebar-menu > li, .sidebar-menu > li > a {
+  border-radius: 0
+  }
+  
+  .sidebar-menu > li.menu-link > a,
+  .table-conversations th a, .table-conversations th a:hover, .table-conversations th a:focus, .table-conversations th span {
+  color: var(--primary);
+  }
+  
+  .section-heading {
+    border-bottom: var(--border);
+  }
+  
+  .table-conversations .conv-active .conv-fader {
+      background: transparent;
+  }
+  
+  .content-2col {
+  box-shadow: none;
+  }
+  
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: var(--color-light);
+    background-color: var(--primary-dark);
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.2),0 0px 10px rgba(0,0,0,0.24);
+    border-width: 0;
+  }
+  
+  .conv-sidebar-block .panel,
+  .table.table-conversations tbody .conv-active {
+      background-color: var(--bg-list);
+  }
+  
+  .btn-primary {
+    color: var(--color-light);
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: all 200ms ease;
+  }
+  
+  .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus,
+  .sidebar-menu .active a,
+  .sidebar-menu .active .glyphicon {
+    color: var(--tertiary) !important;
+    background-color: var(--primary-light);
+  }
+  
+  #conv-toolbar,
+  .conv-active .conv-date a,
+  .table-conversations thead,
+  .section-heading,
+  .rpt-header {
+    background-color: var(--bg-list);
+  }
+  
+  input {
+    accent-color: var(--primary);
+  }
+  
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus, .navbar-default .navbar-nav > li > a:hover {
+      background-color: var(--primary-dark);
+      filter:none;
+  }
+  
+  .onoffswitch-checkbox:checked + .onoffswitch-label {
+      background-color: var(--primary);
+  }
+  .onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label::before {
+      border-color:var(--primary);
+  }
+  
+  .btn-primary:active, 
+  .btn-primary.active, 
+  .open > .dropdown-toggle.btn-primary, 
+  .btn-primary:hover,
+  .btn-primary:focus, .btn-primary.focus {
+      color: var(--color-light);
+      background-color: var(--primary-dark);
+      border-color: var(--primary-dark);
+  }
+  
+  .btn-bordered {
+    color: var(--primary);
+    background-color: transparent;
+    border-color: var(--border-light);
+  }
+  
+  .btn-bordered:hover, .btn-bordered:focus {
+      color: var(--color-light);
+      background-color: var(--primary);
+      border-color: var(--primary);
+  }
+  
+  .dropdown-menu.with-icons .glyphicon, .dash-card-footer .dropdown-menu .glyphicon, .sidebar-buttons .dropdown-menu .glyphicon,
+  a, .btn-link,
+  .btn-trans:hover,
+  .btn-trans:focus,
+  .conv-actions .conv-action {
+      color: var(--primary);
+  }
+  a:hover, a:focus {
+      color: var(--primary-dark);
+  }
+  
+  .cf-group {
+      float: none;    
+      width: auto;
+  }
+  @media (min-width: 576px) {
+    #custom-fields-form .cf-group:nth-child(2n) {
+      float: none;
+    }
+  }
+  
+  .footer {
+  display: none;
+  }
+  
+  .navbar-static-top, .navbar-default {
+  background-image: linear-gradient(180deg,#3ae,#0d8fcf);
+  }
+  
+  .sidebar-2col {
+    padding-right: 0;
+    background-color: var(--bg-list);
+    border-right: var(--border);
+  }
+  
+  textarea[name="settings[customization_css]"] {
+  height: 75vh;
+  }
+  
+  .form-group .col-sm-6:has(textarea[name="settings[customization_css]"]) {
+    width: 100%;
+  }
+  
+  #editor_signature {
+  max-height: 180px;
+    overflow: auto;
+  }
+  
+  .body-search .sidebar-menu > li > a {
+      line-height: normal;
+      height: auto;
+      padding-top: 2px;
+      padding-bottom: 2px;
+  }
+  
+  span.conv-reply.conv-action:before {
+    background-color: var(--primary);
+    color: white;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: var(--border-radius);
+  }

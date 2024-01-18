@@ -7,4 +7,4 @@ Please install the official FreeScout [Customization & Rebranding Module](https:
 Go to the "Customization" page and paste the content of styles.css into the "Custom CSS" field at the bottom and press "Save".
 
 # Customization
-For easy customization of your brand colors you may simply change the colors in the :root declaration on top of the file.
+For easy customization of your brand colors you may change the color values in the :root declaration on top of the file.
