@@ -14,9 +14,20 @@
     /* Custom Field colors */
     --bg-critical: #f001;
     --color-critical: #b00;
+    --color-minor: #888;
 
     --bg-idea: #0f01;
     --color-idea: #0b0;
+}
+
+/* Notiz zum Kunden */
+.customer-extra .customer-section {
+  white-space: pre-line;
+}
+
+/* Eingabefeld für Notiz zum Kunden */
+#notes {
+  min-height: 300px;
 }
 
 .conv-customer-header {
@@ -73,6 +84,11 @@ td.conv-subject p:not(.conv-preview) {
 
 .content-2col {
     box-shadow: none;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: var(--color-light);
+    background-color: var(--primary-dark);
 }
 
 .navbar-default .navbar-nav>.open>a,
@@ -159,6 +175,7 @@ input {
 }
 
 
+.conv-actions .conv-action:hover,
 a:hover,
 a:focus {
     color: var(--primary-dark);
@@ -217,10 +234,14 @@ span.conv-reply.conv-action:before {
     padding: 5px 20px;
     border-radius: var(--border-radius);
 }
+span.conv-reply.conv-action:hover:before {
+    background-color: var(--primary-dark);
+}
 
 /* Custom Field Styles */
 
-/* Dringlichkeit sofort immer FETT */
+/* Dringlichkeit hoch und sofort immer FETT */
+.conv-row.cf_dringlichkeit_hoch td a,
 .conv-row.cf_dringlichkeit_sofort td a {
     font-weight: bold;
 }
@@ -247,9 +268,14 @@ span.conv-reply.conv-action:before {
 .conv-row.cf_prioritat_idee.cf_dringlichkeit_sofort td a {
     color: var(--color-idea);
 }
+.conv-row.cf_prioritat_idee.cf_dringlichkeit_sofort td a {
+    color: var(--color-idea);
+}
+.conv-row.cf_prioritat_idee.cf_dringlichkeit_sofort td {
+    border-top: 2px solid var(--color-idea);
+}
 
 .conv-row.cf_prioritat_unschonheit td,
 .conv-row.cf_dringlichkeit_gering td {
     opacity: 0.5;
 }
-
